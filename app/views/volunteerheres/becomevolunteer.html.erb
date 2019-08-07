@@ -1,0 +1,29 @@
+<header class="becomevolunteer-header">
+
+<h1> Thinking about joining us?</h1>
+
+<p><b>Here is some more information!</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero culpa reiciendis assumenda quibusdam perspiciatis, odit a esse ipsum maxime, illo, architecto. Magni unde voluptatum, saepe quibusdam nesciunt quo autem ipsa nostrum veritatis ut eum, dignissimos hic reiciendis ipsum maxime nulla sapiente quisquam aperiam ducimus assumenda delectus libero. Voluptas dolorum saepe excepturi, expedita, et fugiat modi, dolorem dicta aut laborum illum? <p>
+
+</header>
+
+<section class="signupsec">
+    <legend class="joinusleg"> Join us by appying below.</legend>
+
+<%= form_with model: @volunteer, class:'signupform' do |f| %>
+
+<%= f.label :first_name, class: 'signupformlabel' %>
+<%= f.text_field :first_name, class:'signupformanswer', id:'firstnameField'%>
+
+<%= f.label :last_name, class: 'signupformlabel'%>
+<%= f.text_field :last_name, class:'signupformanswer', id:'lastnameField' %>
+
+<%= f.label :email, class: 'signupformlabel' %>
+<%= f. text_field :email, class:'signupformanswer', id:'email' %>
+
+<%= f.submit "Submit", class:'signupsubmitbutton' %>
+
+<% end %>
+
+
+
+</section>

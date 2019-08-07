@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<section class="userinfo">
+<p>
+  <strong>First name:</strong>
+  <%= @volunteerhere.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @volunteerhere.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @volunteerhere.email %>
+</p>
+
+<%= link_to 'Edit', edit_volunteerhere_path(@volunteerhere) %> |
+<%= link_to 'Back', volunteerheres_path %>

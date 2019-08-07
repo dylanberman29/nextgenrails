@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"rel="stylesheet">
+</head>
+<body>
+<nav>
+	<ul class="navbar">
+     <img src="https://www.designfreelogoonline.com/wp-content/uploads/2014/11/00202-Green-Energy-logo-design-free-logos-online-03.png" class="nav-logo" >
+	 <li class="nav-item">
+     <%= link_to "Home", volunteerheres_path %>
+	  </li>
+	  <li class="nav-item">
+       <%= link_to "Volunteer", becomevolunteer_path %>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="findvolunteers.html">Find Volunteers!</a>
+	  </li>
+	</ul>
+</nav>
+<main>
+  <%= yield %>
+
+	<footer> Footer </footer>
+
+</main>
+</body>
+
+
+</html>

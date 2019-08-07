@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+}
+
+main{
+	font-family: "Merriweather", sans-serif;
+	font-size: 23px;
+}
+
+header {
+	text-align: center;
+	padding: 10% 10% 31%;
+}
+header.homepage-header {
+	background: linear-gradient(rgba(0,0,0, .4),rgba(0,0,0, .4)), url("https://www.wlrv.org/wp-content/uploads/39868137163_287ae41cba_z.jpg");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header.becomevolunteer-header{
+	background:linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)), url("https://twu.edu/media/images/volunteer-services/Volunteer-Services-hero.jpg");
+	background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header h1 {
+	margin-top: 0;
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+	position: center;
+}
+
+header p{
+	font-size: 27px;
+}
+
+header p{
+	color:white;
+}
+
+.navbar li{
+	display: inline-block;
+}
+
+nav {
+	background-color: #659DBD;
+	padding: 10px;
+	position:fixed;
+	width:100%;
+	font-family: "Merriweather", sans-serif;
+}
+
+.navbar{
+	text-align: right;
+}
+
+.nav-logo{
+	max-width: 65px;
+	max-height: 65px;
+	float:left;
+}
+
+.navbar li a{
+	text-decoration: none;
+	color:white;
+	font-size:27px;
+	padding:10px;
+}
+
+header a:hover{
+	text-decoration: underline;
+}
+
+.navbar li a:hover{
+	text-decoration: underline;
+}
+
+.about{
+	background:#659DBD;
+    background-size: cover;
+	color:white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.about p, h2 {
+	max-width: 700px;
+	margin-left: 3%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+h3{
+	max-width: 700px;
+	padding-top: 40px;
+	margin-left: 3%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.mainbuttons{
+	margin-left: 3%;
+	padding: 20px;
+	margin-top: 20px;
+	border: 3px solid white;
+	border-radius: 30px;
+	background-color: #05386B;
+	font-size: 23px;
+	color:white;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.signupsubmitbutton{
+	padding: 20px;
+	margin-top: 20px;
+	border: 3px solid white;
+	background-color: #05386B;
+	font-size: 23px;
+	color:white;
+	display: inline-block;
+	text-decoration: none;
+    border-radius: 30px;
+}
+
+.mainbuttons:hover{
+	text-decoration: underline;
+}
+
+footer{
+	padding: 20px;
+	background-color:#D3D3D3;
+	color:#808080;
+	text-decoration: underline;
+	display: block;
+}
+
+.signupsec{
+display:block;
+text-align: center;
+padding: 20px;
+color:white;
+background:#659DBD;
+
+}
+
+.signupformanswer{
+	display:block;
+	padding:10px;
+	width: 275px;
+	margin-top: 1%;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.joinusleg{
+	border: solid 2px white;
+	width: 30vh;
+	padding:15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.findvolunteers-header{
+
+}
