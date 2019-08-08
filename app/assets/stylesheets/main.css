@@ -49,6 +49,7 @@ nav {
 	background-color: #659DBD;
 	padding: 10px;
 	position:fixed;
+  margin-top:0px;
 	width:100%;
 	font-family: "Merriweather", sans-serif;
 }
@@ -166,6 +167,27 @@ background:#659DBD;
 	margin-bottom: 10px;
 }
 
-.findvolunteers-header{
+.userinfo{
+background:#659DBD;
+padding-top: 10px;
 
+}
+.editformanswer{
+	padding-top: 10px;
+	margin-left: 3%;
+}
+.userinfo p{
+  color:white;
+  margin-top: 30px;
+  margin-left: 3%;
+}
+
+#notice{
+	text-decoration: underline;
+	color:red;
+}
+
+.field{
+	padding:10px;
+	display:block;
 }

@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
 
 <section class="userinfo">
+<p id="notice"><%= notice %></p>
 <p>
   <strong>First name:</strong>
   <%= @volunteerhere.first_name %>
@@ -16,5 +16,6 @@
   <%= @volunteerhere.email %>
 </p>
 
-<%= link_to 'Edit', edit_volunteerhere_path(@volunteerhere) %> |
-<%= link_to 'Back', volunteerheres_path %>
+<%= link_to 'Edit', edit_volunteerhere_path(@volunteerhere), class:'mainbuttons' %> 
+<%= link_to 'Back', volunteerheres_path, class:'mainbuttons' %>
+</section>

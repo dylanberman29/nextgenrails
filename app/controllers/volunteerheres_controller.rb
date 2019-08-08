@@ -28,11 +28,23 @@ class VolunteerheresController < ApplicationController
   # POST /volunteerheres
   # POST /volunteerheres.json
   def create
+    volunteerhere_params = params.require(:volunteerhere).permit(:first_name,:last_name,:email)
     @volunteerhere = Volunteerhere.new(volunteerhere_params)
+    if @volunteerhere.first_name == nil or @volunteerhere.first_name == ""
+       redirect_to becomevolunteer_path, notice: 'Enter your first name!' and return
+    end
+
+    if @volunteerhere.last_name == nil or @volunteerhere.last_name == ""
+       redirect_to becomevolunteer_path, notice: 'Enter your last name!' and return
+    end
+
+    if @volunteerhere.email == nil or @volunteerhere.email == ""
+       redirect_to becomevolunteer_path, notice: 'Enter your email!' and return
+    end
 
     respond_to do |format|
       if @volunteerhere.save
-        format.html { redirect_to @volunteerhere, notice: 'Volunteerhere was successfully created.' }
+        format.html { redirect_to @volunteerhere, notice: 'Your NYCVolunteer account has successfully created.' }
         format.json { render :show, status: :created, location: @volunteerhere }
       else
         format.html { render :new }
@@ -44,9 +56,20 @@ class VolunteerheresController < ApplicationController
   # PATCH/PUT /volunteerheres/1
   # PATCH/PUT /volunteerheres/1.json
   def update
-    respond_to do |format|
+      if volunteerhere_params[:first_name] == nil or volunteerhere_params[:first_name] == ""
+         redirect_to edit_volunteerhere_path, notice: 'Enter your first name!' and return
+      end
+
+      if  volunteerhere_params[:last_name] == nil or volunteerhere_params[:last_name] == ""
+         redirect_to edit_volunteerhere_path, notice: 'Enter your last name!' and return
+      end
+
+      if volunteerhere_params[:email] == nil or volunteerhere_params[:email] == ""
+         redirect_to edit_volunteerhere_path, notice: 'Enter your email!' and return
+      end
+        respond_to do |format|
       if @volunteerhere.update(volunteerhere_params)
-        format.html { redirect_to @volunteerhere, notice: 'Volunteerhere was successfully updated.' }
+        format.html { redirect_to @volunteerhere, notice: 'Your NYCVolunteer account was successfully updated.' }
         format.json { render :show, status: :ok, location: @volunteerhere }
       else
         format.html { render :edit }
