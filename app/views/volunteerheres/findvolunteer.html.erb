@@ -1,0 +1,7 @@
+
+<section class="findsec">
+<h1> List of Volunteers: </h1>
+<% @volunteers.each do |v| %>
+  <p> <%= v.last_name %> , <%= v.first_name %>. Email: <%= v.email %>	<%= link_to "Contact Me!", "mailto:" + v.email, class:'mainbuttons' %> <p>
+<% end %>
+</section>

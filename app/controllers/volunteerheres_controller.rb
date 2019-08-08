@@ -4,7 +4,14 @@ class VolunteerheresController < ApplicationController
   # GET /volunteerheres
   # GET /volunteerheres.json
   def index
-    @volunteerheres = Volunteerhere.all
+    @volunteers = Volunteerhere.all
+  end
+
+  def findvolunteer
+    @volunteers = Volunteerhere.all
+  end
+
+  def contact
   end
 
   # GET /volunteerheres/1
