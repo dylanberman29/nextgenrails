@@ -18,7 +18,11 @@
      <%= link_to "Home", volunteerheres_path %>
 	  </li>
 	  <li class="nav-item">
-       <%= link_to "Volunteer", becomevolunteer_path %>
+			<% if user_signed_in? %>
+			<%= link_to "<span> Sign Out </span>".html_safe, destroy_user_session_path, method: :delete %>
+			<% else %>
+       <%= link_to "<span> Volunteer </span> ".html_safe, new_user_session_path  %>
+			 <%end%>
 	  </li>
 	  <li class="nav-item">
 			<%= link_to "Find Volunteers", findvolunteers_path %>

@@ -53,6 +53,7 @@ nav {
   margin-top:0px;
 	width:100%;
 	font-family: "Merriweather", sans-serif;
+	border-bottom: 2px solid white;
 }
 
 .navbar{
@@ -107,12 +108,23 @@ h3{
 	margin-left: 3%;
 	padding: 20px;
 	margin-top: 20px;
-	border: 3px solid white;
+	border: 2px solid white;
 	border-radius: 30px;
 	background-color: #05386B;
 	font-size: 23px;
 	color:white;
 	display: inline-block;
+	text-decoration: none;
+}
+
+.loginbutton{
+	margin-left: 2%;
+	margin-top: 20px;
+	border: 2px solid white;
+	border-radius: 30px;
+	background-color: #05386B;
+	font-size: 23px;
+	color:white;
 	text-decoration: none;
 }
 
@@ -198,7 +210,31 @@ padding-top: 10px;
 	color:red;
 }
 
-.field{
-	padding:10px;
-	display:block;
+.new_user input{
+	padding:5px;
+	margin-left: 2%;
+	margin-top: 7px;
+}
+
+form.new_user{
+	padding-top:105px;
+}
+
+.loginleg{
+	margin-left:2%;
+	margin-bottom: 5px;
+	text-decoration: underline;
+	border:white solid 2px;
+	width:85px;
+}
+
+.new_user label{
+	padding:15px;
+  margin-top: 12px;
+	margin-left:2%;
+}
+
+.loginsection{
+	background:#659DBD;
+	color:white
 }
