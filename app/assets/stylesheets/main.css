@@ -117,7 +117,7 @@ h3{
 	text-decoration: none;
 }
 
-.loginbutton{
+.secondarybuttons{
 	margin-left: 2%;
 	margin-top: 20px;
 	border: 2px solid white;
@@ -236,5 +236,13 @@ form.new_user{
 
 .loginsection{
 	background:#659DBD;
-	color:white
+	color:white;
+	height: 100%;
+}
+
+.error{
+	color:red;
+	font-size: 15px;
+	margin-left: 2%;
+	width: 250px;
 }
